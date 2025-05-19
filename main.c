@@ -2,25 +2,25 @@
 #include <string.h>
 
 int main() {
-    char palavra[101]; // ate 100 caracteres + 1 para o caractere nulo
-    int i, tamanho, palindromo = 1;
+    char palavra[101]; // Ate 100 caracteres + 1 para o caractere nulo
+    int i, tamanho_palavra, palindromo = 1;
 
     printf("Digite uma palavra: ");
-    scanf("%100s", palavra); // le no maximo 100 caracteres sem espaços
+    scanf("%100s", palavra); // Le no maximo 100 caracteres sem espaÃ§os
 
-    tamanho = strlen(palavra);
+    tamanho_palavra = strlen(palavra); // Calcula tamanho da string com a funcao strlen
 
-    for (i = 0; i < tamanho / 2; i++) {
-        if (palavra[i] != palavra[tamanho - 1 - i]) {
+    for (i = 0; i < tamanho_palavra / 2; i++) { // Este for percorre metade da palavra
+        if (palavra[i] != palavra[tamanho_palavra - 1 - i]) { // Le a primeira letra e corresponde com a ultima
             palindromo = 0;
             break;
         }
     }
 
-    if (palindromo == 1) {
+    if (palindromo == 1) { // Eh um palindro se 1
         printf("A palavra e um palindromo.\n");
     } else {
-        printf("A palavra NAO e um palindromo.\n");
+        printf("A palavra NAO e um palindromo.\n"); // Nao e um palindromo se diferente de 1
     }
 
     return 0;
