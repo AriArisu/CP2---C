@@ -10,7 +10,7 @@ int main() {
 
     tamanho_palavra = strlen(palavra); // Calcula tamanho da string com a funcao strlen
 
-    for (i = 0; i < tamanho_palavra / 2; i++) { // Este for percorre metade da palavra
+    for (i = 0; i < tamanho_palavra / 2; i++) { // Este "for" percorre metade da palavra
         if (palavra[i] != palavra[tamanho_palavra - 1 - i]) { // Le a primeira letra e corresponde com a ultima
             palindromo = 0;
             break;
