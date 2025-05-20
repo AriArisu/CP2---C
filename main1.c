@@ -1,3 +1,8 @@
+/* Exercicio 1 - Feito por Larissa Martins Rm 563116
+   Exercico 2 - Feito por Giovanna Aparecida Rm 562018
+   Exercicio 3 - Feito por Sofia Mai Sanuki Rm 563828
+   Exercicio 4 -Feito por Bruna Marques e Queiroz Rm 565648
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
